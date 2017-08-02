@@ -44,7 +44,7 @@ ${name}\:backup-assets:
 ## Restore assets from S3 ${name}
 ${name}\:restore-assets:
 	@aws s3 sync s3://$(ASSETS_BUCKET)/ ${dir}/ --exact-timestamps
-	sudo chmod -R 777 ${dir}
+	@sudo chmod -R 777 ${dir}
 
 __EOF__
 chmod 644 /usr/local/include/Makefile.${name}.assets
