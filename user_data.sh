@@ -16,7 +16,7 @@ cat <<"__EOF__" > /usr/local/bin/${name}.backup_assets.sh
 #!/bin/bash
 if [ "${backup_enabled}" = "true" ]; then
   echo "Asset backup ${name} started"
-  aws s3 sync --exact-timestamps --no-follow-symlinks ${dir}/ s3://${bucket}/
+  aws s3 sync --exact-timestamps --no-follow-symlinks ${dir}/ s3://${bucket}
   echo "Asset backup ${name} finished"
 else
   echo "Asset backup ${name} disabled"
@@ -43,7 +43,7 @@ ${name}\:assets-backup:
 
 ## Restore assets from S3 ${name}
 ${name}\:assets-restore:
-	@aws s3 sync s3://$(ASSETS_BUCKET)/ ${dir}/ --exact-timestamps
+	@aws s3 sync s3://$(ASSETS_BUCKET) ${dir}/ --exact-timestamps
 	@sudo chmod -R 777 ${dir}
 
 __EOF__
