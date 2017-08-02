@@ -38,11 +38,11 @@ cat <<"__EOF__" > /usr/local/include/Makefile.${name}.assets
 ASSETS_BUCKET ?= "${bucket}"
 
 ## Backup assets to S3 ${name}
-${name}\:backup-assets:
+${name}\:assets-backup:
 	@/usr/local/bin/${name}.backup_assets.sh
 
 ## Restore assets from S3 ${name}
-${name}\:restore-assets:
+${name}\:assets-restore:
 	@aws s3 sync s3://$(ASSETS_BUCKET)/ ${dir}/ --exact-timestamps
 	@sudo chmod -R 777 ${dir}
 
