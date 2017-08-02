@@ -51,7 +51,7 @@ data "aws_iam_policy_document" "default" {
     effect = "Allow"
 
     resources = [
-      "${format("arn:aws:s3:::%s", replace(${var.bucket}, "/\\/[^|]*/", ""))}"
+      "${format("arn:aws:s3:::%s", replace(var.bucket, "/\\/[^|]*/", ""))}"
     ]
   }
 
@@ -61,8 +61,8 @@ data "aws_iam_policy_document" "default" {
     effect = "Allow"
 
     resources = [
-      "${format("arn:aws:s3:::%s", replace(${var.bucket}, "/\\/[^|]*/", ""))}",
-      "${format("arn:aws:s3:::%s/*", replace(${var.bucket}, "/\\/[^|]*/", ""))}"
+      "${format("arn:aws:s3:::%s", replace(var.bucket, "/\\/[^|]*/", ""))}",
+      "${format("arn:aws:s3:::%s/*", replace(var.bucket, "/\\/[^|]*/", ""))}"
     ]
   }
 }
