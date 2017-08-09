@@ -1,11 +1,9 @@
-resource "null_resource" "default" {
-  triggers = {
-    id = "${lower(format("%v-%v-%v-%v", var.namespace, var.stage, var.name, "assets"))}"
-  }
-
-  lifecycle {
-    create_before_destroy = true
-  }
+# Define composite variables for resources
+module "label" {
+  source    = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.1.0"
+  namespace = "${var.namespace}"
+  name      = "${var.name}"
+  stage     = "${var.stage}"
 }
 
 data "template_file" "default" {
@@ -23,7 +21,7 @@ data "template_file" "default" {
 
 ## IAM Role Policy that allows access to S3
 resource "aws_iam_policy" "default" {
-  name = "${null_resource.default.triggers.id}"
+  name = "${module.label.id}-assets"
 
   lifecycle {
     create_before_destroy = true
