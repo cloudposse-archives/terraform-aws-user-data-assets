@@ -1,1 +1,1 @@
-# terraform-aws-ubuntu-assets-user-data
+# terraform-template-ubuntu-assets-user-data
