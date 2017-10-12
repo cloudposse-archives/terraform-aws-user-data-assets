@@ -13,12 +13,12 @@ variable "bucket" {
 }
 
 variable "backup_enabled" {
-  default = false
+  default     = false
   description = "Enable backup assets to s3 on cron"
 }
 
 variable "backup_frequency" {
-  default = "0 0 1 * *"
+  default     = "0 0 1 * *"
   description = "Frequency backup assets on cron"
 }
 
@@ -27,6 +27,6 @@ variable "ssh_user" {
 }
 
 variable "os" {
-  default = "ubuntu"
+  default     = "ubuntu"
   description = "Server OS that will execute user data script"
 }
