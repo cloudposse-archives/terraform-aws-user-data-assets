@@ -1,27 +1,32 @@
 # Define composite variables for resources
 module "label" {
-  source    = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.1.0"
-  namespace = "${var.namespace}"
-  name      = "${var.name}"
-  stage     = "${var.stage}"
+  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.2.1"
+  namespace  = "${var.namespace}"
+  name       = "${var.name}"
+  stage      = "${var.stage}"
+  attributes = ["assets"]
+}
+
+locals {
+  template_path = "${path.module}/templates/${var.os}.sh"
 }
 
 data "template_file" "default" {
-  template = "${file("${path.module}/user_data.sh")}"
+  template = "${file(local.template_path)}"
 
   vars {
-    name              = "${var.name}"
-    dir               = "${var.dir}"
-    bucket            = "${var.bucket}"
-    backup_enabled    = "${var.backup_enabled}"
-    backup_frequency  = "${var.backup_frequency}"
-    ssh_user          = "${var.ssh_user}"
+    name             = "${var.name}"
+    dir              = "${var.dir}"
+    bucket           = "${var.bucket}"
+    backup_enabled   = "${var.backup_enabled}"
+    backup_frequency = "${var.backup_frequency}"
+    ssh_user         = "${var.ssh_user}"
   }
 }
 
 ## IAM Role Policy that allows access to S3
 resource "aws_iam_policy" "default" {
-  name = "${module.label.id}-assets"
+  name = "${module.label.id}"
 
   lifecycle {
     create_before_destroy = true
@@ -44,23 +49,23 @@ data "aws_iam_policy_document" "default" {
   }
 
   statement {
-    actions = [ "s3:ListBucket" ]
-
-    effect = "Allow"
-
-    resources = [
-      "${format("arn:aws:s3:::%s", replace(var.bucket, "/\\/[^|]*/", ""))}"
-    ]
-  }
-
-  statement {
-    actions = [ "s3:*" ]
+    actions = ["s3:ListBucket"]
 
     effect = "Allow"
 
     resources = [
       "${format("arn:aws:s3:::%s", replace(var.bucket, "/\\/[^|]*/", ""))}",
-      "${format("arn:aws:s3:::%s/*", replace(var.bucket, "/\\/[^|]*/", ""))}"
+    ]
+  }
+
+  statement {
+    actions = ["s3:*"]
+
+    effect = "Allow"
+
+    resources = [
+      "${format("arn:aws:s3:::%s", replace(var.bucket, "/\\/[^|]*/", ""))}",
+      "${format("arn:aws:s3:::%s/*", replace(var.bucket, "/\\/[^|]*/", ""))}",
     ]
   }
 }
