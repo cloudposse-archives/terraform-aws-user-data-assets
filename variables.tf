@@ -26,7 +26,7 @@ variable "ssh_user" {
   description = "User that used to execute backup cron"
 }
 
-variable "os" {
-  default     = "ubuntu"
-  description = "Server OS that will execute user data script"
+variable "flavor" {
+  default     = "debian-systemd"
+  description = "Flavor denpends of OS and init system"
 }
