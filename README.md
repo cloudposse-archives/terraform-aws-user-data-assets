@@ -8,6 +8,8 @@
  [![Build Status](https://travis-ci.org/cloudposse/terraform-template-user-data-assests.svg?branch=master)](https://travis-ci.org/cloudposse/terraform-template-user-data-assests) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-template-user-data-assests.svg)](https://github.com/cloudposse/terraform-template-user-data-assests/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
+terraform-template-user-data-assests
+
 
 ---
 
@@ -78,6 +80,28 @@ Available targets:
 | policy_arn | description here |
 | user_data | description here |
 
+
+
+
+## Share the Love 
+
+Like this project? Please give it a ★ on [our GitHub](https://github.com/cloudposse/terraform-template-user-data-assests)! (it helps us **a lot**) 
+
+Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
+
+
+## Related Projects
+
+Check out these related projects.
+
+- [terraform-aws-user-data-cloud](https://travis-ci.org/cloudposse/terraform-aws-user-data-cloud) - terraform-aws-user-data-cloud
+- [terraform-aws-user-data-dns-proxy](https://travis-ci.org/cloudposse/terraform-aws-user-data-dns-proxy) - terraform-aws-user-data-dns-proxy
+- [terraform-aws-user-data-resolv-conf](https://travis-ci.org/cloudposse/terraform-aws-user-data-resolv-conf) - terraform-aws-user-data-resolv-conf
+- [terraform-aws-user-data-s3-backend](https://travis-ci.org/cloudposse/terraform-aws-user-data-s3-backend) - terraform-aws-user-data-s3-backend
+- [terraform-template-user-data-dba](https://travis-ci.org/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
+- [terraform-template-user-data-dba](https://travis-ci.org/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
+- [terraform-template-user-data-github-authorized-keys](https://travis-ci.org/cloudposse/terraform-template-user-data-github-authorized-keys) - terraform-template-user-data-github-authorized-keys
+- [terraform-template-user-data-nfs](https://travis-ci.org/cloudposse/terraform-template-user-data-nfs) - terraform-template-user-data-nfs
 
 
 

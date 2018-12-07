@@ -40,14 +40,35 @@ badges:
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
 
-# related:
-  # - name: "terraform-aws-cloudfront-s3-cdn"
-    # description: "Terraform module to easily provision CloudFront CDN backed by an S3 origin"
-    # url: "https://travis-ci.org/cloudposse/terraform-aws-cloudfront-s3-cdn"
+related:
+  - name: "terraform-aws-user-data-cloud"
+    description: "terraform-aws-user-data-cloud"
+    url: "https://travis-ci.org/cloudposse/terraform-aws-user-data-cloud"
+  - name: "terraform-aws-user-data-dns-proxy"
+    description: "terraform-aws-user-data-dns-proxy"
+    url: "https://travis-ci.org/cloudposse/terraform-aws-user-data-dns-proxy"
+  - name: "terraform-aws-user-data-resolv-conf"
+    description: "terraform-aws-user-data-resolv-conf"
+    url: "https://travis-ci.org/cloudposse/terraform-aws-user-data-resolv-conf"
+  - name: "terraform-aws-user-data-s3-backend"
+    description: "terraform-aws-user-data-s3-backend"
+    url: "https://travis-ci.org/cloudposse/terraform-aws-user-data-s3-backend"
+  - name: "terraform-template-user-data-dba"
+    description: "terraform-template-user-data-dba"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-dba"
+  - name: "terraform-template-user-data-dba"
+    description: "terraform-template-user-data-dba"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-dba"
+  - name: "terraform-template-user-data-github-authorized-keys"
+    description: "terraform-template-user-data-github-authorized-keys"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-github-authorized-keys"
+  - name: "terraform-template-user-data-nfs"
+    description: "terraform-template-user-data-nfs"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-nfs"
 
 # Short description of this project
 description: |-
-  Short description of this project
+  terraform-template-user-data-assests
 
 # How to use this project
 # usage: |-
