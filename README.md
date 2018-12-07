@@ -196,6 +196,15 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
 
 
 
+### Contributors
+
+|  [![Igor Rodionov][goruha_avatar]][goruha_homepage]<br/>[Igor Rodionov][goruha_homepage] |
+|---|
+
+  [goruha_homepage]: https://github.com/goruha
+  [goruha_avatar]: https://github.com/goruha.png?size=150
+
+
 
 [![README Footer][readme_footer_img]][readme_footer_link]
 [![Beacon][beacon]][website]

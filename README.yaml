@@ -69,8 +69,6 @@ include:
   - "docs/terraform.md"
 
 # Contributors to this project
-# contributors:
-#   - name: "Igor Rodionov"
-#     github: "goruha"
-#   - name: "Sergey Vasilyev"
-#     github: "s2504s"
+contributors:
+  - name: "Igor Rodionov"
+    github: "goruha"
