@@ -46,8 +46,8 @@ badges:
     # url: "https://travis-ci.org/cloudposse/terraform-aws-cloudfront-s3-cdn"
 
 # Short description of this project
-# description: |-
-  # Short description of this project
+description: |-
+  Short description of this project
 
 # How to use this project
 # usage: |-
