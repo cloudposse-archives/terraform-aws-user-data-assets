@@ -1,0 +1,76 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: terraform-template-user-data-assests
+
+# Tags of this project
+tags:
+  - aws
+  - terraform
+  - terraform-modules
+  - user-data
+  - assests
+
+# Categories of this project
+categories:
+  - terraform-modules/user-data
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/terraform-template-user-data-assests
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/terraform-template-user-data-assests.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/terraform-template-user-data-assests"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/terraform-template-user-data-assests.svg"
+    url: "https://github.com/cloudposse/terraform-template-user-data-assests/releases/latest"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+# related:
+  # - name: "terraform-aws-cloudfront-s3-cdn"
+    # description: "Terraform module to easily provision CloudFront CDN backed by an S3 origin"
+    # url: "https://travis-ci.org/cloudposse/terraform-aws-cloudfront-s3-cdn"
+
+# Short description of this project
+# description: |-
+  # Short description of this project
+
+# How to use this project
+# usage: |-
+#   Include this module in your existing terraform code:
+
+#   ```hcl
+#   module "user_data_nfs" {
+#     source = "git::https://github.com/cloudposse/terraform-template-user-data-assests.git?ref=master"
+#     namespace                  = "${var.namespace}"
+#     name                       = "${var.name}"
+#     stage                      = "${var.stage}"
+#     dir                        = "${var.dir}"
+#     host                       = "${var.host}"
+#   }
+#   ```
+
+include:
+  - "docs/targets.md"
+  - "docs/terraform.md"
+
+# Contributors to this project
+# contributors:
+#   - name: "Igor Rodionov"
+#     github: "goruha"
+#   - name: "Sergey Vasilyev"
+#     github: "s2504s"
