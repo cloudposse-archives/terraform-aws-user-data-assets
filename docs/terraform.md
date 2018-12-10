@@ -8,10 +8,10 @@
 | bucket | S3 bucket to store assets | string | - | yes |
 | dir | Directory path where assets stored on server | string | - | yes |
 | flavor | Flavor depends of OS and init system | string | `debian-systemd` | no |
-| name |  | string | - | yes |
-| namespace |  | string | - | yes |
+| name | Name  (e.g. `app` or `cluster`) | string | - | yes |
+| namespace | Namespace (e.g. `cp` or `cloudposse`) | string | - | yes |
 | ssh_user | User that used to execute backup cron | string | - | yes |
-| stage |  | string | - | yes |
+| stage | Stage (e.g. `prod`, `dev`, `staging`) | string | - | yes |
 
 ## Outputs
 

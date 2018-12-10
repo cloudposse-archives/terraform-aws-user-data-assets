@@ -68,10 +68,10 @@ Available targets:
 | bucket | S3 bucket to store assets | string | - | yes |
 | dir | Directory path where assets stored on server | string | - | yes |
 | flavor | Flavor depends of OS and init system | string | `debian-systemd` | no |
-| name |  | string | - | yes |
-| namespace |  | string | - | yes |
+| name | Name  (e.g. `app` or `cluster`) | string | - | yes |
+| namespace | Namespace (e.g. `cp` or `cloudposse`) | string | - | yes |
 | ssh_user | User that used to execute backup cron | string | - | yes |
-| stage |  | string | - | yes |
+| stage | Stage (e.g. `prod`, `dev`, `staging`) | string | - | yes |
 
 ## Outputs
 
@@ -94,14 +94,14 @@ Are you using this project or any of our other projects? Consider [leaving a tes
 
 Check out these related projects.
 
-- [terraform-aws-user-data-cloud](https://travis-ci.org/cloudposse/terraform-aws-user-data-cloud) - terraform-aws-user-data-cloud
-- [terraform-aws-user-data-dns-proxy](https://travis-ci.org/cloudposse/terraform-aws-user-data-dns-proxy) - terraform-aws-user-data-dns-proxy
-- [terraform-aws-user-data-resolv-conf](https://travis-ci.org/cloudposse/terraform-aws-user-data-resolv-conf) - terraform-aws-user-data-resolv-conf
-- [terraform-aws-user-data-s3-backend](https://travis-ci.org/cloudposse/terraform-aws-user-data-s3-backend) - terraform-aws-user-data-s3-backend
-- [terraform-template-user-data-dba](https://travis-ci.org/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
-- [terraform-template-user-data-dba](https://travis-ci.org/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
-- [terraform-template-user-data-github-authorized-keys](https://travis-ci.org/cloudposse/terraform-template-user-data-github-authorized-keys) - terraform-template-user-data-github-authorized-keys
-- [terraform-template-user-data-nfs](https://travis-ci.org/cloudposse/terraform-template-user-data-nfs) - terraform-template-user-data-nfs
+- [terraform-aws-user-data-cloud](https://github.com/cloudposse/terraform-aws-user-data-cloud) - terraform-aws-user-data-cloud
+- [terraform-aws-user-data-dns-proxy](https://github.com/cloudposse/terraform-aws-user-data-dns-proxy) - terraform-aws-user-data-dns-proxy
+- [terraform-aws-user-data-resolv-conf](https://github.com/cloudposse/terraform-aws-user-data-resolv-conf) - terraform-aws-user-data-resolv-conf
+- [terraform-aws-user-data-s3-backend](https://github.com/cloudposse/terraform-aws-user-data-s3-backend) - terraform-aws-user-data-s3-backend
+- [terraform-template-user-data-dba](https://github.com/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
+- [terraform-template-user-data-dba](https://github.com/cloudposse/terraform-template-user-data-dba) - terraform-template-user-data-dba
+- [terraform-template-user-data-github-authorized-keys](https://github.com/cloudposse/terraform-template-user-data-github-authorized-keys) - terraform-template-user-data-github-authorized-keys
+- [terraform-template-user-data-nfs](https://github.com/cloudposse/terraform-template-user-data-nfs) - terraform-template-user-data-nfs
 
 
 
