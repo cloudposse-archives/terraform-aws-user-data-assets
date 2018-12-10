@@ -1,8 +1,17 @@
-variable "namespace" {}
+variable "namespace" {
+  description = "Namespace (e.g. `cp` or `cloudposse`)"
+  type        = "string"
+}
 
-variable "stage" {}
+variable "stage" {
+  description = "Stage (e.g. `prod`, `dev`, `staging`)"
+  type        = "string"
+}
 
-variable "name" {}
+variable "name" {
+  description = "Name  (e.g. `app` or `cluster`)"
+  type        = "string"
+}
 
 variable "dir" {
   description = "Directory path where assets stored on server"
