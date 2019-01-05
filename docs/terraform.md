@@ -1,4 +1,3 @@
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -17,6 +16,6 @@
 
 | Name | Description |
 |------|-------------|
-| policy_arn | description here |
-| user_data | description here |
+| policy_arn | IAM policy ARNы |
+| user_data | User data scripts content |
 

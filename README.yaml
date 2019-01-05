@@ -70,21 +70,6 @@ related:
 description: |-
   terraform-template-user-data-assests
 
-# How to use this project
-# usage: |-
-#   Include this module in your existing terraform code:
-
-#   ```hcl
-#   module "user_data_nfs" {
-#     source = "git::https://github.com/cloudposse/terraform-template-user-data-assests.git?ref=master"
-#     namespace                  = "${var.namespace}"
-#     name                       = "${var.name}"
-#     stage                      = "${var.stage}"
-#     dir                        = "${var.dir}"
-#     host                       = "${var.host}"
-#   }
-#   ```
-
 include:
   - "docs/targets.md"
   - "docs/terraform.md"

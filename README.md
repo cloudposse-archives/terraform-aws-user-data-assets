@@ -58,7 +58,6 @@ Available targets:
   lint                                Lint terraform code
 
 ```
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -77,8 +76,8 @@ Available targets:
 
 | Name | Description |
 |------|-------------|
-| policy_arn | description here |
-| user_data | description here |
+| policy_arn | IAM policy ARNы |
+| user_data | User data scripts content |
 
 
 
@@ -167,7 +166,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ## Copyright
 
-Copyright © 2017-2018 [Cloud Posse, LLC](https://cpco.io/copyright)
+Copyright © 2017-2019 [Cloud Posse, LLC](https://cpco.io/copyright)
 
 
 
