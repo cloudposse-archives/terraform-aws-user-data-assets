@@ -76,7 +76,7 @@ Available targets:
 
 | Name | Description |
 |------|-------------|
-| policy_arn | IAM policy ARNы |
+| policy_arn | IAM policy ARNs |
 | user_data | User data scripts content |
 
 

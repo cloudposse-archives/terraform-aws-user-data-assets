@@ -5,5 +5,5 @@ output "user_data" {
 
 output "policy_arn" {
   value       = "${aws_iam_policy.default.arn}"
-  description = "IAM policy ARNы"
+  description = "IAM policy ARNs"
 }
